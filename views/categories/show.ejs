@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify - Category</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-2 mt-4"><%= category.title %></h1>
+        <a href="/" class="btn btn-secondary mb-4">Back to Home Page</a>
+        <a href="/categories/category/edit/<%=category.id%>" class="btn btn-info mb-4">Edit Category</a> <br>
+        
+        <h4>Articles from the category:</h4>
+        <button type="button" class="btn btn-primary mt-2 mb-4" data-bs-toggle="modal" data-bs-target="#newArticleModal">
+            Add a New Article
+        </button>
+        <% category.articles.slice().reverse().forEach(article => { %>       
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><%= article.name %></h5>
+                    <p class="card-text"><strong>Description:</strong> <%= article.description %></p>
+                    <p class="card-text"><strong>Size:</strong> <%= article.size %></p>
+                    <p class="card-text"><strong>Color:</strong> <%= article.color %></p>
+                    <p class="card-text"><strong>Price:</strong> <%= article.price %> lei</p>
+                    <a href="/articles/<%= article.id %>" class="btn btn-success">See Article</a>
+                    <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit Article</a>
+
+                </div>
+            </div>
+             
+        <% }) %>
+             
+        
+        <div class="modal fade" id="newArticleModal" tabindex="-1" aria-labelledby="newArticleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newArticleModalLabel">Add a New Article</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/categories/category/<%= category.id %>/new-article" method="POST">
+                            <%- include('_article_fields')  %>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

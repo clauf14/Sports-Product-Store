@@ -1,0 +1,13 @@
+ <% categories.forEach(category => { %>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h4 class="card-title"><%= category.title  %></h4>
+                    <div class="card-subtitle text-muted mb-2">
+                        <%= category.createdAt.toDateString() %>
+                    </div>
+                    <div class="card-articles-number mb-2">
+                        <%= "Number of articles:" + category.numOfArticles %>
+                    </div>
+                </div>  
+            </div>
+        <% }) %>
