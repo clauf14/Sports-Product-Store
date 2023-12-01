@@ -7,19 +7,19 @@
 This is a **Fullstack** project that leverages Node.js to create a robust server, incorporating MongoDB to manage three distinct collections - `post`, `article`, and `category`. Notably, the `category` collection establishes a one-to-many relationship with the `article` object. The project contains a secion with all categories, a section with last 3 posts, button for creating, deleting and editing all objects.
 
 ## Usage
-**1.Clone the Repository:**
+**1. Clone the Repository and open with VSCode:**
 
    ```git bash
    git clone https://github.com/clauf14/Sports-Product-Store.git
    ```
 
-**2.Open the terminal and type:**
+**2. Open the terminal and type:**
 
   ```git bash
    npm run devStart
   ```
 
-**3.Click on the link and enjoy!**
+**3. Click on the link and enjoy!**
 
   - Server started on [ http://localhost:8080 ]
 
