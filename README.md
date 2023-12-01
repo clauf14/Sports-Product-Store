@@ -1,7 +1,5 @@
 # Sports-Product-Store
 
-# Project Title
-
 ## Overview
 
 This project leverages Node.js to create a robust server, incorporating MongoDB to manage three distinct collections - `post`, `article`, and `category`. Notably, the `category` collection establishes a one-to-many relationship with the `article` object.
