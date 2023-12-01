@@ -1,6 +1,6 @@
 # Sports-Product-Store
 
-# Click Here to test the app [https://clauf14.github.io/Sports-Product-Store/]
+# Click Here to test the app - (https://clauf14.github.io/Sports-Product-Store/)
 
 ## Overview
 
