@@ -13,13 +13,15 @@ This is a **Fullstack** project that leverages Node.js to create a robust server
    git clone https://github.com/clauf14/Sports-Product-Store.git
    ```
 
-**2. Open the terminal and type:**
+**2. Add your MongoDB URI to the *.env* file:**
+
+**3. Open the terminal and type:**
 
   ```git bash
    npm run devStart
   ```
 
-**3. Click on the link and enjoy!**
+**4. Click on the link and enjoy!**
 
   - Server started on [ http://localhost:8080 ]
 
