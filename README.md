@@ -27,9 +27,3 @@ This is a **Fullstack** project that leverages Node.js to create a robust server
 - Node.js
 - Express.js
 - MongoDB
-
-## Usage
-
-1. **Clone Repository:**
-   ```bash
-   git clone https://github.com/clauf14/sports-product-store.git
