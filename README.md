@@ -21,7 +21,7 @@ This is a **Fullstack** project that leverages Node.js to create a robust server
 
 **4. Click on the link and enjoy!**
 
-  - Server started on [ http://localhost:8080 ]
+  - Server started on [http://localhost:8080](http://localhost:8080)
 
 ## Features
 - **Markdown for Posts**
