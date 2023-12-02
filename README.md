@@ -1,7 +1,5 @@
 # Sports-Product-Store
 
-# Click Here to test the app 
-
 ## Overview
 
 This is a **Fullstack** project that leverages Node.js to create a robust server, incorporating MongoDB to manage three distinct collections - `post`, `article`, and `category`. Notably, the `category` collection establishes a one-to-many relationship with the `article` object. The project contains a secion with all categories, a section with last 3 posts, button for creating, deleting and editing all objects.
@@ -23,7 +21,7 @@ This is a **Fullstack** project that leverages Node.js to create a robust server
 
 **4. Click on the link and enjoy!**
 
-  - Server started on [ http://localhost:8080 ]
+  - Server started on [http://localhost:8080](http://localhost:8080)
 
 ## Features
 - **Markdown for Posts**
